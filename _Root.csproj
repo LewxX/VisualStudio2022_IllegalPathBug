@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets/2.0.1">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<IsPackable>false</IsPackable>
+		<PublishRepositoryUrl>false</PublishRepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="src\**" />
+		<None Remove="bin\**" />
+		<None Remove="bin\**" />
+		<None Remove="_nuget_packages\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="../Global.Build.props" Link="global\Global.Build.props>"></None>
+		<None Include="../Nuget.config" Link="global\NuGet.Config"></None>
+	</ItemGroup>
+</Project>
