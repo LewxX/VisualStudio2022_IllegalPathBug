@@ -1,8 +1,12 @@
 # VisualStudio2022_IllegalPathBug
 
+Reproducible with Visual Studio 2022 Version 17.3.4
+
 ![Screenshot of Error](screenshot.png?raw=true "Screenshot ")
 
 ## Crash log:
+```
+{
 27.09.2022 17:47:29
 NotRecoverable
 System.ArgumentException: Illegal characters in path.
@@ -56,3 +60,5 @@ System.AggregateException: One or more errors occurred. ---> System.ArgumentExce
    at Microsoft.VisualStudio.Threading.JoinableTask`1.CompleteOnCurrentThread()
    at Microsoft.VisualStudio.ProjectSystem.VS.Implementation.Package.ProjectFactory.CreateProject(String fileName, String location, String name, UInt32 flags, Guid& projectIid, IntPtr& project, Int32& canceled)
    at Microsoft.VisualStudio.Shell.Flavor.FlavoredProjectFactoryBase.Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject(String fileName, String location, String name, UInt32 flags, Guid& projectGuid, IntPtr& project, Int32& canceled)<---
+}
+```
