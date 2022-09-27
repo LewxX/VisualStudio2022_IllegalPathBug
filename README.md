@@ -1,5 +1,7 @@
 # VisualStudio2022_IllegalPathBug
 
+Reproducible with Visual Studio 2022 Version 17.3.4
+
 ![Screenshot of Error](screenshot.png?raw=true "Screenshot ")
 
 ## Crash log:
