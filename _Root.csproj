@@ -7,8 +7,6 @@
 
 	<ItemGroup>
 		<None Remove="src\**" />
-		<None Remove="bin\**" />
-		<None Remove="bin\**" />
 		<None Remove="_nuget_packages\**" />
 	</ItemGroup>
 
